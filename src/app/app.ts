@@ -1,11 +1,13 @@
 import { Component, signal } from '@angular/core';
 import { Header } from './components/header/header';
+import { Home } from './components/home/home';
 
 @Component({
   selector: 'app-root',
-  imports: [ Header],
+  imports: [ Header, Home],
   template: `
     <app-header />
+    <app-home />
   `,
   styles: [],
 })
